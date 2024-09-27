@@ -51,6 +51,7 @@ def generate_launch_description():
     pkg_project_bringup = get_package_share_directory("ardupilot_gz_bringup")
     pkg_project_gazebo = get_package_share_directory("ardupilot_gz_gazebo")
     pkg_ros_gz_sim = get_package_share_directory("ros_gz_sim")
+    # pkg_ros_gz_image = get_package_share_directory("ros_gz_image")
 
     # Iris.
     iris = IncludeLaunchDescription(
@@ -86,6 +87,18 @@ def generate_launch_description():
         launch_arguments={"gz_args": "-v4 -g"}.items(),
     )
 
+    # basically needs to run >ros2 run ros_gz_image image_bridge /world/map/model/iris/link/avoidance_cam_left_link/sensor/camera/image
+    gz_image = LaunchDescription([
+        Node(
+            package='ros_gz_image',
+            executable='image_bridge',
+            name='image_bridge_node',
+            output='screen',
+            parameters=[],
+            arguments=['/world/map/model/iris/link/avoidance_cam_left_link/sensor/camera/image']
+        ),
+    ])
+   
     # RViz.
     rviz = Node(
         package="rviz2",
@@ -103,5 +116,6 @@ def generate_launch_description():
             gz_sim_gui,
             iris,
             rviz,
+            gz_image,
         ]
     )
