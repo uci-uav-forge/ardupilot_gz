@@ -68,6 +68,11 @@
     </spherical_coordinates>
 
     <include>
+      <uri>model://stop_sign</uri>
+        <pose degrees="true">0 10 0.1 90 0 0</pose>
+    </include>
+
+    <include>
       <uri>model://runway</uri>
         <pose degrees="true">-29 545 0 0 0 363</pose>
     </include>
