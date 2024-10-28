@@ -73,6 +73,21 @@
     </include>
 
     <include>
+      <uri>model://person_standing</uri>
+        <pose degrees="true">-5 5 0.1 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://prius_hybrid</uri>
+        <pose degrees="true">5 5 0.1 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robocup_3Dsim_ball</uri>
+        <pose degrees="true">3 -5 0.1 0 0 0</pose>
+    </include>
+
+    <include>
       <uri>model://runway</uri>
         <pose degrees="true">-29 545 0 0 0 363</pose>
     </include>
