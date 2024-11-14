@@ -95,7 +95,7 @@ def generate_launch_description():
             name='image_bridge_node',
             output='screen',
             parameters=[],
-            arguments=['/world/map/model/iris/link/avoidance_cam_left_link/sensor/camera/image']
+            arguments=['/world/map/model/iris/model/iris_with_standoffs/link/base_link/sensor/camera/image']
         ),
     ])
    

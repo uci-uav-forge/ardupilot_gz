@@ -91,7 +91,7 @@
     </include>
 
     <include>
-      <uri>model://iris_with_gimbal</uri>
+      <uri>model://iris_with_ardupilot</uri>
       <name>iris</name>
       <pose degrees="true">1.5 -1.8 0.195 0 0 0</pose>
     </include>
