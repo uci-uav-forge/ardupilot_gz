@@ -68,23 +68,21 @@
     </spherical_coordinates>
 
     <include>
-      <uri>model://stop_sign</uri>
-        <pose degrees="true">0 10 0.1 90 0 0</pose>
+      <uri>model://a2rl_gate</uri>
+      <name>gate1</name>
+        <pose degrees="true">4.55 1.77 2 0 0 90</pose>
     </include>
 
     <include>
-      <uri>model://person_standing</uri>
-        <pose degrees="true">-5 5 0.1 0 0 0</pose>
+      <uri>model://a2rl_gate</uri>
+      <name>gate2</name>
+        <pose degrees="true">9.95 1.75 2 0 0 90</pose>
     </include>
 
     <include>
-      <uri>model://prius_hybrid</uri>
-        <pose degrees="true">5 5 0.1 0 0 0</pose>
-    </include>
-
-    <include>
-      <uri>model://robocup_3Dsim_ball</uri>
-        <pose degrees="true">3 -5 0.1 0 0 0</pose>
+      <uri>model://a2rl_gate</uri>
+      <name>gate3</name>
+        <pose degrees="true">15.62 -1.8 2 0 0 90</pose>
     </include>
 
     <include>
@@ -95,7 +93,7 @@
     <include>
       <uri>model://iris_with_gimbal</uri>
       <name>iris</name>
-      <pose degrees="true">0 0 0.195 0 0 90</pose>
+      <pose degrees="true">1.5 -1.8 0.195 0 0 0</pose>
     </include>
 
   </world>
