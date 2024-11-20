@@ -86,8 +86,8 @@
     </include>
 
     <include>
-      <uri>model://runway</uri>
-        <pose degrees="true">-29 545 0 0 0 363</pose>
+        <uri>model://depot</uri>
+        <pose degrees="true">0 0 0 0 0 0</pose>
     </include>
 
     <include>
