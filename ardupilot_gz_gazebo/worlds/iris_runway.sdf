@@ -70,37 +70,37 @@
     <include>
       <uri>model://a2rl_gate</uri>
       <name>gate1</name>
-        <pose degrees="true">4.55 -2.5 2 0 0 90</pose>
+        <pose degrees="true">3.05 0 2 0 0 90</pose>
     </include>
 
     <include>
       <uri>model://a2rl_gate</uri>
       <name>gate2</name>
-        <pose degrees="true">11.55 2.5 2 0 0 90</pose>
+        <pose degrees="true">10.05 5 2 0 0 90</pose>
     </include>
 
     <include>
       <uri>model://a2rl_gate</uri>
       <name>gate3</name>
-        <pose degrees="true">18.55 -2.5 2 0 0 90</pose>
+        <pose degrees="true">17.05 0 2 0 0 90</pose>
     </include>
 
     <include>
       <uri>model://a2rl_gate</uri>
       <name>gate4</name>
-        <pose degrees="true">25.55 2.5 2 0 0 90</pose>
+        <pose degrees="true">24.05 5 2 0 0 90</pose>
     </include>
 
     <include>
         <uri>model://depot</uri>
-        <pose degrees="true">14 0 0 0 0 0</pose>
+        <pose degrees="true">12.5 2.5 0 0 0 0</pose>
         <scale>1.1 1.1 1.1</scale>
     </include>
 
     <include>
       <uri>model://iris_with_ardupilot</uri>
       <name>iris</name>
-      <pose degrees="true">1.5 -2.5 0.195 0 0 0</pose>
+      <pose degrees="true">0 0 0.195 0 0 0</pose>
     </include>
 
   </world>
