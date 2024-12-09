@@ -67,7 +67,7 @@
       <surface_model>EARTH_WGS84</surface_model>
     </spherical_coordinates>
 
-    <include>
+    <!-- <include>
       <uri>model://stop_sign</uri>
         <pose degrees="true">0 10 0.1 90 0 0</pose>
     </include>
@@ -85,7 +85,7 @@
     <include>
       <uri>model://robocup_3Dsim_ball</uri>
         <pose degrees="true">3 -5 0.1 0 0 0</pose>
-    </include>
+    </include> -->
 
     <include>
       <uri>model://runway</uri>
