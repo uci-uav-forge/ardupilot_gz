@@ -107,11 +107,11 @@
     <include>
       <uri>model://a2rl_gate</uri>
       <name>gate1</name>
-        <!-- <pose degrees="true">3.05 0 1.45 0 0 90</pose> -->
-        <pose degrees="true">1.88 -0.43 1.89 0 0 90</pose>
+        <pose degrees="true">3.05 0 1.45 0 0 90</pose>
+        <!-- <pose degrees="true">1.88 -0.43 1.89 0 0 90</pose> -->
     </include>
 
-    <!-- <include>
+    <include>
       <uri>model://a2rl_gate</uri>
       <name>gate2</name>
         <pose degrees="true">10.05 5 1.45 0 0 90</pose>
@@ -123,7 +123,7 @@
         <pose degrees="true">17.05 0 1.45 0 0 90</pose>
     </include>
 
-    <include>
+    <!-- <include>
       <uri>model://a2rl_gate</uri>
       <name>gate4</name>
         <pose degrees="true">24.05 5 1.45 0 0 90</pose>
@@ -143,7 +143,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>25 25</size>
+              <size>50 50</size>
             </plane>
           </geometry>
           <surface>
@@ -159,7 +159,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>25 25</size>
+              <size>50 50</size>
             </plane>
           </geometry>
           <material>
