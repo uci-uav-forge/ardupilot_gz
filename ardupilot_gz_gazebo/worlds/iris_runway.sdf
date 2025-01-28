@@ -107,27 +107,62 @@
     <include>
       <uri>model://a2rl_gate</uri>
       <name>gate1</name>
-        <pose degrees="true">4.75 -2.07 1.45 0 0 90</pose>
-        <!-- <pose degrees="true">1.88 -0.43 1.89 0 0 90</pose> -->
+        <pose degrees="true">3.65 13.13 1.45 0 0 -46.38</pose>
     </include>
 
     <include>
       <uri>model://a2rl_gate</uri>
       <name>gate2</name>
-        <pose degrees="true">10.25 1.45 1.45 0 0 90</pose>
+        <pose degrees="true">10.16 11.35 1.45 0 0 -105.07</pose>
     </include>
 
     <include>
       <uri>model://a2rl_gate</uri>
-      <name>gate3</name>
-        <pose degrees="true">15.75 -2.07 1.45 0 0 90</pose>
+      <name>gate3_lower</name>
+        <pose degrees="true">15.59 14.95 1.45 0 0 -36.18</pose>
     </include>
 
-    <!-- <include>
+    <include>
       <uri>model://a2rl_gate</uri>
-      <name>gate4</name>
-        <pose degrees="true">24.05 5 1.45 0 0 90</pose>
-    </include> -->
+      <name>gate3_upper</name>
+        <pose degrees="true">15.59 14.95 4.15 0 0 -36.18</pose>
+    </include>
+
+    <include>
+      <uri>model://a2rl_gate</uri>
+      <name>gate4_lower</name>
+        <pose degrees="true">18.79 17.88 1.45 0 0 -0.43</pose>
+    </include>
+
+    <include>
+      <uri>model://a2rl_gate</uri>
+      <name>gate4_upper</name>
+        <pose degrees="true">18.79 17.88 4.15 0 0 -0.43</pose>
+    </include>
+
+    <include>
+      <uri>model://a2rl_gate</uri>
+      <name>gate5</name>
+        <pose degrees="true">20.51 9.9 1.45 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://a2rl_gate</uri>
+      <name>gate6</name>
+        <pose degrees="true">15.75 1.83 1.45 0 0 -90</pose>
+    </include>
+
+    <include>
+      <uri>model://a2rl_gate</uri>
+      <name>gate7</name>
+        <pose degrees="true">10.25 5.35 1.45 0 0 -90</pose>
+    </include>
+
+    <include>
+      <uri>model://a2rl_gate</uri>
+      <name>gate8</name>
+        <pose degrees="true">4.75 1.83 1.45 0 0 -90</pose>
+    </include>
 
     <!-- <include>
         <uri>model://depot</uri>
@@ -175,7 +210,7 @@
     <include>
       <uri>model://iris_with_ardupilot</uri>
       <name>iris</name>
-      <pose degrees="true">1.7 -2.1 0.195 0 0 0</pose>
+      <pose degrees="true">1.21 10.42 0.195 0 0 43.62</pose>
     </include>
 
   </world>
