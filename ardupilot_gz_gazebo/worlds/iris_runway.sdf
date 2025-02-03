@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <sdf version="1.9">
   <world name="map">
-    <physics name="1ms" type="ignore">
-      <max_step_size>0.001</max_step_size>
+    <physics name="3ms" type="ignore">
+      <max_step_size>0.003</max_step_size>
       <real_time_factor>1.0</real_time_factor>
     </physics>
 
@@ -78,11 +78,13 @@
 
     <scene>
       <ambient>1.0 1.0 1.0</ambient>
+      <shadows>0</shadows>
+      <grid>false</grid>
+      <origin_visual>false</origin_visual>
       <background>0.8 0.8 0.8</background>
-      <sky></sky>
     </scene>
 
-    <light type="directional" name="sun">
+    <!-- <light type="directional" name="sun">
       <cast_shadows>true</cast_shadows>
       <pose>0 0 10 0 0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
@@ -94,15 +96,15 @@
         <quadratic>0.001</quadratic>
       </attenuation>
       <direction>-0.5 0.1 -0.9</direction>
-    </light>
+    </light> -->
 
-    <spherical_coordinates>
+    <!-- <spherical_coordinates>
       <latitude_deg>-35.3632621</latitude_deg>
       <longitude_deg>149.1652374</longitude_deg>
       <elevation>10.0</elevation>
       <heading_deg>0</heading_deg>
       <surface_model>EARTH_WGS84</surface_model>
-    </spherical_coordinates>
+    </spherical_coordinates> -->
 
     <include>
       <uri>model://a2rl_gate</uri>
