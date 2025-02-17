@@ -45,6 +45,7 @@
       <grid>false</grid>
       <origin_visual>false</origin_visual>
       <background>0.8 0.8 1</background>
+      <sky></sky>
     </scene>
 
     <light type="directional" name="sun">
@@ -78,6 +79,13 @@
       <uri>model://iris_with_gimbal</uri>
       <name>iris</name>
       <pose degrees="true">0 0 0.195 0 0 90</pose>
+    </include>
+
+    <include>
+      <uri>model://iris_dummy</uri>
+      <name>dummy_drone</name>
+      <pose degrees="true">5 45 17 0 0 0</pose>
+      <static>true</static>
     </include>
 
   </world>

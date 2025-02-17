@@ -87,7 +87,7 @@ def generate_launch_description():
         launch_arguments={"gz_args": "-v4 -g"}.items(),
     )
 
-    # basically needs to run >ros2 run ros_gz_image image_bridge /world/map/model/iris/link/avoidance_cam_left_link/sensor/camera/image
+    # basically needs to run >ros2 run ros_gz_image image_bridge /world/map/model/iris/link/avoidance_cam_front_link/sensor/camera/image
     gz_image = LaunchDescription([
         Node(
             package='ros_gz_image',
@@ -95,7 +95,7 @@ def generate_launch_description():
             name='image_bridge_node',
             output='screen',
             parameters=[],
-            arguments=['/world/map/model/iris/link/avoidance_cam_left_link/sensor/camera/image']
+            arguments=['/world/map/model/iris/link/avoidance_cam_front_link/sensor/camera/image']
         ),
     ])
    
