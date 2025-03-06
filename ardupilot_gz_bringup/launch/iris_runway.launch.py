@@ -98,6 +98,17 @@ def generate_launch_description():
             arguments=['/world/map/model/iris/link/avoidance_cam_front_link/sensor/camera/image']
         ),
     ])
+
+    gz_image_2 = LaunchDescription([
+        Node(
+            package='ros_gz_image',
+            executable='image_bridge',
+            name='image_bridge_node',
+            output='screen',
+            parameters=[],
+            arguments=['/world/map/model/iris/link/cam_down_link/sensor/camera/image']
+        ),
+    ])
    
     # RViz.
     # rviz = Node(
@@ -117,5 +128,6 @@ def generate_launch_description():
             iris,
             # rviz,
             gz_image,
+            gz_image_2,
         ]
     )
