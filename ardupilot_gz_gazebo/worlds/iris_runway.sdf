@@ -113,84 +113,35 @@
       <uri>model://a2rl_gate</uri>
       <name>gate1</name>
         <!-- x y z (center) 0 0 yaw - 90-->
-        <pose degrees="true">14 25 1.45 0 0 -55</pose>
+        <pose degrees="true">6.88 3.97 1.45 0 0 -76</pose>
     </include>
+
 
     <include>
       <uri>model://a2rl_gate</uri>
       <name>gate2</name>
-        <pose degrees="true">30 19 1.45 0 0 -105</pose>
+        <!-- x y z (center) 0 0 yaw - 90-->
+        <pose degrees="true">46.52 15.94 1.45 0 0 -76</pose>
     </include>
 
     <include>
       <uri>model://a2rl_gate</uri>
       <name>gate3</name>
-        <pose degrees="true">46 22 1.45 0 0 -80</pose>
+        <!-- x y z (center) 0 0 yaw - 90-->
+        <pose degrees="true">47.59 12.06 1.45 0 0 -76</pose>
     </include>
 
     <include>
       <uri>model://a2rl_gate</uri>
-      <name>gate4_lower</name>
-        <pose degrees="true">63 20 1.45 0 0 -90</pose>
+      <name>gate4</name>
+        <!-- x y z (center) 0 0 yaw - 90-->
+        <pose degrees="true">87.12 24.03 1.45 0 0 -76</pose>
     </include>
-
-    <include>
-      <uri>model://a2rl_gate</uri>
-      <name>gate4_upper</name>
-        <pose degrees="true">63 20 4.15 0 0 -90</pose>
-    </include>
-
-    <include>
-      <uri>model://a2rl_gate</uri>
-      <name>gate5_lower</name>
-        <pose degrees="true">85 18 1.45 0 0 -90</pose>
-    </include>
-
-    <include>
-      <uri>model://a2rl_gate</uri>
-      <name>gate5_upper</name>
-        <pose degrees="true">85 18 4.15 0 0 -90</pose>
-    </include>
-
-    <include>
-      <uri>model://a2rl_gate</uri>
-      <name>gate6</name>
-        <pose degrees="true">68 13 1.45 0 0 -75</pose>
-    </include>
-
-    <include>
-      <uri>model://a2rl_gate</uri>
-      <name>gate7</name>
-        <pose degrees="true">55 7 1.45 0 0 -90</pose>
-    </include>
-
-    <include>
-      <uri>model://a2rl_gate</uri>
-      <name>gate8</name>
-        <pose degrees="true">37 12 1.45 0 0 -90</pose>
-    </include>
-
-    <include>
-      <uri>model://a2rl_gate</uri>
-      <name>gate9</name>
-        <pose degrees="true">19 7 1.45 0 0 -90</pose>
-    </include>
-
-    <include>
-      <uri>model://a2rl_gate</uri>
-      <name>gate10</name>
-        <pose degrees="true">9 14 1.45 0 0 0</pose>
-    </include>
-
-    <!-- <include>
-      <uri>model://runway</uri>
-        <pose degrees="true">-29 545 0 0 0 363</pose>
-    </include> -->
 
     <include>
       <uri>model://iris_with_ardupilot</uri>
       <name>iris</name>
-      <pose degrees="true">8 22 0.195 0 0 35</pose>
+      <pose degrees="true">3 3 0.195 0 0 14</pose>
     </include>
 
   </world>
