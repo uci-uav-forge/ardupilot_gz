@@ -194,7 +194,7 @@
     <include>
       <uri>model://iris_with_ardupilot</uri>
       <name>iris</name>
-      <pose degrees='true'>3 17.5 0.195 0 0 0</pose>
+      <pose degrees='true'>3 24 0.195 0 0 0</pose>
     </include>
 
   </world>
