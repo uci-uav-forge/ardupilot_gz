@@ -16,7 +16,13 @@
 """
 Launch an Alti transition quadcopter in Gazebo and Rviz.
 
+export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:\
+$HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/models:\
+$HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/worlds
+
 sim_vehicle.py -v ArduPlane --model JSON --add-param-file=$HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/config/alti_transition_quad.param
+
+sim_vehicle.py -v ArduPlane --model JSON --add-param-file=$HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/config/skywalker_x8.param --console --map
 """
 import os
 
