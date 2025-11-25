@@ -20,6 +20,13 @@ export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:\
 $HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/models:\
 $HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/worlds
 
+/home/eesh/forge/uavf2026/simcore/ardu_ws/src/ardupilot/build/sitl/bin/arduplane --model JSON 
+--speedup 1 --slave 0 --defaults ardu_ws/src/ardupilot/Tools/autotest/models/plane.parm,
+/home/eesh/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/config/alti_transition_quad.param 
+--sim-address=127.0.0.1 -I0
+
+
+gz sim -v4 -r alti_transition_runway.sdf
 sim_vehicle.py -v ArduPlane --model JSON --add-param-file=$HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/config/alti_transition_quad.param
 
 sim_vehicle.py -v ArduPlane --model JSON --add-param-file=$HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/config/skywalker_x8.param --console --map
@@ -76,6 +83,12 @@ def generate_launch_description():
             "slave": "0",
             "instance": "0",
             "defaults": os.path.join(
+                pkg_ardupilot_gazebo,
+                "config",
+                "plane.parm",
+            )
+            + ","
+            + os.path.join(
                 pkg_ardupilot_gazebo,
                 "config",
                 "alti.param",
