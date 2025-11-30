@@ -20,6 +20,10 @@ export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:\
 $HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/models:\
 $HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/worlds
 
+export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:\
+$HOME/forge/uavf2026/simcore/ardu_ws/src/ardupilot_gazebo/models:\
+$HOME/forge/uavf2026/simcore/ardu_ws/src/ardupilot_gz/ardupilot_gz_gazebo/worlds
+
 /home/eesh/forge/uavf2026/simcore/ardu_ws/src/ardupilot/build/sitl/bin/arduplane --model JSON 
 --speedup 1 --slave 0 --defaults ardu_ws/src/ardupilot/Tools/autotest/models/plane.parm,
 /home/eesh/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/config/alti_transition_quad.param 
@@ -27,6 +31,7 @@ $HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/worlds
 
 
 gz sim -v4 -r alti_transition_runway.sdf
+sim_vehicle.py -v ArduPlane --model JSON --add-param-file=$HOME/forge/uavf2026/simcore/ardu_ws/src/ardupilot_gazebo/config/alti.param
 sim_vehicle.py -v ArduPlane --model JSON --add-param-file=$HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/config/alti_transition_quad.param
 
 sim_vehicle.py -v ArduPlane --model JSON --add-param-file=$HOME/forge/uavf2026/simcore/ardu_ws/src/SITL_Models/Gazebo/config/skywalker_x8.param --console --map
@@ -121,7 +126,7 @@ def generate_launch_description():
 
     # Load SDF file.
     sdf_file = os.path.join(
-        pkg_ardupilot_gazebo, "models", "alti_transition_quad", "model.sdf"
+        pkg_ardupilot_gazebo, "models", "alti_with_gimbal", "model.sdf"
     )
     with open(sdf_file, "r") as infp:
         robot_desc = infp.read()
