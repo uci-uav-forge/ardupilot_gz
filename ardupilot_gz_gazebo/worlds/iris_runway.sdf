@@ -71,7 +71,7 @@
     </spherical_coordinates>
 
     <include>
-      <uri>model://runway</uri>
+      <uri>model://runway_forge</uri>
         <pose>0 0 0 0 0 -1.85</pose>
     </include>
 
